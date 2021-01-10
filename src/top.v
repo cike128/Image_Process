@@ -24,10 +24,10 @@
 module  top(
         //system signals
         input                   sclk                    ,      //50MHz 
-        input                   s_rst_n                 ,       
+        input                   s_rst_n                 ,      //rst 
         //VGA
-        output wire             vga_vsync               ,
-        output wire             vga_hsync               ,
+        output wire             vga_vsync               ,       //场同步
+        output wire             vga_hsync               ,       //行同步
         output wire      [15:0] vga_rgb                              
 
 );
